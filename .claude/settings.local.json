@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun run type-check:*)",
+      "Bash(bun run build:web)",
+      "Bash(bun --filter native start)",
+      "Bash(bun add:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(npx expo start:*)",
+      "Bash(pkill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter web dev",
+    "start": "bun --filter native start",
+    "build:web": "bun --filter web build",
+    "type-check": "bun run type-check --filter utils && bun run type-check --filter ui && bun run type-check --filter web && bun run type-check --filter native"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
